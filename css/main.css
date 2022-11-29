@@ -17,8 +17,12 @@
         - Col-Lg
 
 6.0 - Components: specific designed components
-        - Img-id  
-
+        - Images
+        - Navigation
+        - Col-Sm-Id's
+        - Col-Md-Id's
+        - Col-Lg-Id's
+        
  7.0 - Utilities:
         - Screen Reader   
 --------------------------------------------------------------*/
@@ -37,13 +41,14 @@
         box-sizing: border-box;
 }
 html {
-        
+        font-size: 14px;
 }
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
 /* ----- TYPOGRAPHY ----- */
+
 
 /*--------------------------------------------------------------
     5.0 - OBJECTS
@@ -208,6 +213,31 @@ html {
 /*--------------------------------------------------------------
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
+
+/* ----- IMAGES ---- */
+
+#bg-mountains {
+        background: url(../img/starts-with-you.jpg) no-repeat;
+        background-size: cover;
+}
+#bg-hills {
+        background: url(../img/what-we-do.jpg) no-repeat;
+        background-size: cover;
+}
+#bg-trees {
+        background: url(../img/take-action.jpg) no-repeat;
+        background-size: cover;
+}
+
+/* ----- NAVIGATION ---- */
+
+
+/* ----- COL-SM-ID'S ---- */
+
+
+/* ----- COL-MD-ID'S ---- */
+
+/* ----- COL-LG-ID'S ---- */
 
 /*--------------------------------------------------------------
     7.0 - UTILITY
