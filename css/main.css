@@ -19,10 +19,13 @@
 6.0 - Components: specific designed components
         - Images
         - Navigation
+        - Buttons
+        - Footer
         - Col-Sm-Id's
+                -What We Do
         - Col-Md-Id's
         - Col-Lg-Id's
-        
+
  7.0 - Utilities:
         - Screen Reader   
 --------------------------------------------------------------*/
@@ -42,6 +45,7 @@
 }
 html {
         font-size: 14px;
+        font-family: 'EB Garamond', sans-serif;
 }
 /*--------------------------------------------------------------
     4.0 - ELEMENTS
@@ -49,7 +53,36 @@ html {
 
 /* ----- TYPOGRAPHY ----- */
 
-
+#bg-mountains > div > p:first-of-type,
+h1 {
+        text-align: center;
+        font: 3.5rem 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #fff;
+        text-transform: uppercase;
+}
+span {
+        font: italic 2rem 'EB Garamond', sans-serif;
+        text-transform: lowercase;
+        display: block;
+}
+p {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 24px;
+}
+main > div > p {
+        font-size: 2.2rem;
+        color: #000;
+        line-height: 36px;
+}
+h2 {
+        font: 1rem 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #bdbcbc;
+        text-align: center;
+        text-transform: uppercase;
+}
 /*--------------------------------------------------------------
     5.0 - OBJECTS
 -------------------------------------------------------------- */
@@ -228,13 +261,112 @@ html {
         background: url(../img/take-action.jpg) no-repeat;
         background-size: cover;
 }
+#bg-hills > div > div > div,
+#bg-trees > div > div > div {
+        text-align: center;
+}
 
+section > #bg-hills {
+        padding: 0px 0px 330px 0px;
+}
+section > #bg-trees {
+        padding: 0px 0px 330px 0px;
+}
 /* ----- NAVIGATION ---- */
+nav {
+        text-align: center;
+}
+nav ul {
+        list-style-type: none;
+        padding: 0px;    
+}
+nav li {
+        display: inline-block;
+        margin: 0px 0px 0px 20px;
+}
+nav li > a {
+        font: 1rem 'Montserrat', sans-serif;
+        font-weight: 600;
+        color: #fff;
+}
+nav li:last-of-type > a {
+        border: 1px solid #fff;
+        padding: 5px 10px;
+        border-radius: 30px;
+}
+nav li > a:hover {
+        text-decoration: underline;
+}
+nav li:last-of-type > a:hover {
+        background-color: #fff;
+        padding: 5px 10px;
+        border-radius: 30px;
+        color: #5f9378;
+        text-decoration: none;
+}
+/* ----- BUTTONS ---- */
 
+a {
+        text-decoration: none;
+        text-transform: uppercase;
+}
+p > a {
+        font: 1rem 'Montserrat', sans-serif;
+        font-weight: 600;
+        background-color: #5f9378;
+        padding: 10px 15px;
+        border-radius: 30px;
+        color: #fff;
+}
+/* ----- FOOTERs ---- */
+footer {
+        background-color: #356d4e;
+}
+footer > div {
+        background-color: #5f9378;
+}
+footer > div ul {
+        text-align: center;
+}
+footer > div li{
+        display: inline-block;
+        padding: 0px 10px 0px 0px;
+}
+address ul > li,
+footer > div li {
+        list-style-type: none;
+        font: 1rem 'Montserrat', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        line-height: 30px;
+}
+footer ul > li > a {
+        color: #fff;
+}
+footer ul > li > a:hover {
+        text-decoration: underline;
+}
 
 /* ----- COL-SM-ID'S ---- */
 
-
+/* ----- WHAT WE DO ---- */
+main > nav {
+        background-color: #fff;
+        position: sticky;
+        top: 0px;
+}
+main > nav p {
+        font-size: 1rem;
+        font-style: italic;
+        color:#356d4e;
+}
+main > nav li > a {
+        color:#bdbcbc;
+}
+ main > nav li > a:hover {
+        color:#356d4e;
+        text-decoration: none;
+}
 /* ----- COL-MD-ID'S ---- */
 
 /* ----- COL-LG-ID'S ---- */
