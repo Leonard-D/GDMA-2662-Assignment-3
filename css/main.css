@@ -299,7 +299,7 @@ nav li:last-of-type > a {
         border-radius: 30px;
 }
 nav li > a:hover,
-footer ul > li > a:hover {
+address > ul > li > a:hover {
         border-bottom: 1px solid #fff;
         padding-bottom: 3px;
 }
@@ -402,7 +402,7 @@ blockquote > footer {
 #achievements li {
         background: url(../img/tree.svg) no-repeat left top;
         background-size: 10px;
-        padding: 0px 0px 0px 15px;
+        padding: 0px 0px 10px 15px;
 }
 section {
         margin-bottom: 30px;
