@@ -22,13 +22,11 @@
         - Buttons
         - Footer
         - Col-Sm-Id's
-                -What We Do
         - Col-Md-Id's
         - Col-Lg-Id's
-                -Starts With You
-                -What We Do
+
  7.0 - Utilities:
-        - Screen Reader   
+        - Alignment  
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
     3.0 - GENERIC
@@ -256,16 +254,16 @@ h2 {
 
 #bg-mountains {
         background: url(../img/starts-with-you.jpg) no-repeat;
-        background-size: cover;
-        padding-bottom: 100px;
 }
 #bg-hills {
         background: url(../img/what-we-do.jpg) no-repeat;
-        background-size: cover;
-        padding-bottom: 100px;
 }
 #bg-trees {
         background: url(../img/take-action.jpg) no-repeat;
+}
+#bg-mountains,
+#bg-hills,
+#bg-trees {
         background-size: cover;
         padding-bottom: 100px;
 }
@@ -300,8 +298,10 @@ nav li:last-of-type > a {
         padding: 5px 10px;
         border-radius: 30px;
 }
-nav li > a:hover {
-        text-decoration: underline;
+nav li > a:hover,
+footer ul > li > a:hover {
+        border-bottom: 1px solid #fff;
+        padding-bottom: 3px;
 }
 nav li:last-of-type > a:hover {
         background-color: #fff;
@@ -331,8 +331,10 @@ footer {
 footer > div {
         background-color: #5f9378;
 }
-footer > div ul {
+footer > div ul,
+address > ul {
         text-align: center;
+        padding: 0px;
 }
 footer > div li{
         display: inline-block;
@@ -349,13 +351,8 @@ footer > div li {
 footer ul > li > a {
         color: #fff;
 }
-footer ul > li > a:hover {
-        text-decoration: underline;
-}
 
 /* ----- COL-SM-ID'S ---- */
-
-/* ----- WHAT WE DO ---- */
 main > nav {
         background-color: #fff;
         position: sticky;
@@ -390,21 +387,28 @@ blockquote {
         border-top: 1px solid #bdbcbc;
         border-bottom: 1px solid #bdbcbc;
 }
+blockquote > p:first-of-type {
+        font-size: 3rem;
+        margin: 30px 0px 0px;
+}
 blockquote > footer {
         background: none;
         font-family: 'Monserrat', sans-serif;
         color: #bdbcbc;
 }
 #achievements ul {
+        list-style-type: none;
         padding: 0px;
         line-height: 24px;
 }
-#achievements ul > li {
-        background: url(../img/tree.jpg) no-repeat;
-        list-style-type: none;
+#achievements li {
+        background: url(../img/tree.svg) no-repeat left top;
+        background-size: 10px;
+        padding: 0px 0px 0px 15px;
 }
 section {
         margin-bottom: 30px;
+        padding: 0px;
 }
 /* ----- COL-MD-ID'S ---- */
 @media screen and (min-width: 768px) {
@@ -414,12 +418,6 @@ section {
                 padding-bottom: 100px;
         }
 
-        #mission h2,
-        #mission p,
-        #achievements h2 {
-                text-align: center;
-                margin: 0px auto;
-        }
 }
 
 /* ----- COL-LG-ID'S ---- */
@@ -444,18 +442,19 @@ section {
                display: inline-block;
                padding: 0px 10px 0px 0px;
         }
-       /* ----- STARTS WITH YOU ---- */
        #bg-mountains > div > p:first-of-type {
                font-size: 4.5rem;
        }
        span {
                font-size: 3rem;
        }
-       /* ----- WHAT WE DO ---- */
        main > nav,
        main > nav > p {
                text-align: left;
        }
+       main > nav {
+               height: 30px;
+        }
        main > nav li {
                display: block;
                margin: 0px 0px 20px 0px
@@ -475,4 +474,3 @@ section {
         justify-content: center;
 }
 
-/* ----- SCREEN READER ----- */
