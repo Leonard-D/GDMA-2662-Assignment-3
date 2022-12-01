@@ -305,8 +305,6 @@ footer ul > li > a:hover {
 }
 nav li:last-of-type > a:hover {
         background-color: #fff;
-        padding: 5px 10px;
-        border-radius: 30px;
         color: #5f9378;
         text-decoration: none;
 }
@@ -323,6 +321,9 @@ p > a {
         padding: 10px 15px;
         border-radius: 30px;
         color: #fff;
+}
+p > a:hover {
+        background-color: #356d4e;
 }
 /* ----- FOOTER ---- */
 footer {
@@ -358,7 +359,7 @@ main > nav {
         position: sticky;
         top: 0px;
 }
-main > nav p {
+main > nav > p {
         font-size: 1rem;
         font-style: italic;
         color:#356d4e;
@@ -371,9 +372,6 @@ main > nav li > a:hover {
         text-decoration: none;
 }
 main > nav li:last-of-type > a {
-        padding: 0px;
-}
-main > nav li:last-of-type > a:hover {
         padding: 0px;
 }
 #mission h2,
@@ -430,10 +428,6 @@ section {
        #bg-hills > div > div > div,
         #bg-trees > div > div > div {
                text-align: left;
-       }
-       a > img {
-               width: 120px;
-               padding-bottom: 100px;
        }
        address {
                text-align: center;
