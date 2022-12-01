@@ -25,7 +25,8 @@
                 -What We Do
         - Col-Md-Id's
         - Col-Lg-Id's
-
+                -Starts With You
+                -What We Do
  7.0 - Utilities:
         - Screen Reader   
 --------------------------------------------------------------*/
@@ -60,6 +61,10 @@ h1 {
         font-weight: 600;
         color: #fff;
         text-transform: uppercase;
+        margin: 0 auto;
+}
+i {
+        font-size: 1.5rem;
 }
 span {
         font: italic 2rem 'EB Garamond', sans-serif;
@@ -252,23 +257,24 @@ h2 {
 #bg-mountains {
         background: url(../img/starts-with-you.jpg) no-repeat;
         background-size: cover;
+        padding-bottom: 100px;
 }
 #bg-hills {
         background: url(../img/what-we-do.jpg) no-repeat;
         background-size: cover;
+        padding-bottom: 100px;
 }
 #bg-trees {
         background: url(../img/take-action.jpg) no-repeat;
         background-size: cover;
+        padding-bottom: 100px;
 }
 #bg-hills > div > div > div,
 #bg-trees > div > div > div {
         text-align: center;
 }
 
-section > #bg-hills {
-        padding: 0px 0px 330px 0px;
-}
+section > #bg-hills,
 section > #bg-trees {
         padding: 0px 0px 330px 0px;
 }
@@ -318,7 +324,7 @@ p > a {
         border-radius: 30px;
         color: #fff;
 }
-/* ----- FOOTERs ---- */
+/* ----- FOOTER ---- */
 footer {
         background-color: #356d4e;
 }
@@ -363,14 +369,102 @@ main > nav p {
 main > nav li > a {
         color:#bdbcbc;
 }
- main > nav li > a:hover {
+main > nav li > a:hover {
         color:#356d4e;
         text-decoration: none;
 }
+main > nav li:last-of-type > a {
+        padding: 0px;
+}
+main > nav li:last-of-type > a:hover {
+        padding: 0px;
+}
+#mission h2,
+#mission p,
+#achievements h2,
+#achievements ul {
+        text-align: left;
+        margin: 0px auto;
+}
+blockquote {
+        border-top: 1px solid #bdbcbc;
+        border-bottom: 1px solid #bdbcbc;
+}
+blockquote > footer {
+        background: none;
+        font-family: 'Monserrat', sans-serif;
+        color: #bdbcbc;
+}
+#achievements ul {
+        padding: 0px;
+        line-height: 24px;
+}
+#achievements ul > li {
+        background: url(../img/tree.jpg) no-repeat;
+        list-style-type: none;
+}
+section {
+        margin-bottom: 30px;
+}
 /* ----- COL-MD-ID'S ---- */
+@media screen and (min-width: 768px) {
+
+        a > img {
+                width: 120px;
+                padding-bottom: 100px;
+        }
+
+        #mission h2,
+        #mission p,
+        #achievements h2 {
+                text-align: center;
+                margin: 0px auto;
+        }
+}
 
 /* ----- COL-LG-ID'S ---- */
 
+@media screen and (min-width: 1024px) {
+       nav {
+               text-align: right;
+       }
+       #bg-mountains > div > div > div > h1,
+       #bg-hills > div > div > div,
+        #bg-trees > div > div > div {
+               text-align: left;
+       }
+       a > img {
+               width: 120px;
+               padding-bottom: 100px;
+       }
+       address {
+               text-align: center;
+       }
+       address > ul > li{
+               display: inline-block;
+               padding: 0px 10px 0px 0px;
+        }
+       /* ----- STARTS WITH YOU ---- */
+       #bg-mountains > div > p:first-of-type {
+               font-size: 4.5rem;
+       }
+       span {
+               font-size: 3rem;
+       }
+       /* ----- WHAT WE DO ---- */
+       main > nav,
+       main > nav > p {
+               text-align: left;
+       }
+       main > nav li {
+               display: block;
+               margin: 0px 0px 20px 0px
+        }
+        #whatwedo {
+                text-align: left;
+        }
+
+}
 /*--------------------------------------------------------------
     7.0 - UTILITY
 -------------------------------------------------------------- */
